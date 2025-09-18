@@ -1,0 +1,2 @@
+patient_id	sample_id	cancer_type	age	sex	stage	treatment	treatment_start_date	response_label	sample_type	notes
+P001	Pt1.baseline	Melanoma	NA	NA	NA	anti-PD1	NA	Non-responder	tumor	pilot row from TPM

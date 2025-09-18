@@ -1,0 +1,26 @@
+# Ignore raw sequencing data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Ignore intermediate BAM/SAM
+*.bam
+*.sam
+
+# Ignore reports/logs
+*.html
+*.json
+*.pdf
+
+# Ignore conda environments
+.env/
+.venv/
+*.egg-info/
+_pycache_/
+*.log
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
