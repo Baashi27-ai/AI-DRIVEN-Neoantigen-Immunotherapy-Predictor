@@ -1,5 +1,4 @@
-# --- Bioinformatics big files (keep them out of git) ---
-# raw & intermediates
+# --- Bioinformatics big files ---
 *.fastq
 *.fastq.gz
 *.fq
@@ -8,14 +7,10 @@
 *.sam
 *.bai
 *.cram
-*.crai
 *.sra
-*.gtf
-*.gff
-*.gff3
-*.bed
-*.bedGraph
-*.bw
+*.vcf
+*.vcf.gz
+*.bcf
 *.h5
 *.hdf5
 *.npz
@@ -23,56 +18,37 @@
 *.feather
 *.arrow
 
-# variants / indexes (keep compact TSV summaries instead)
-*.vcf
-*.vcf.gz
-*.vcf.gz.tbi
-*.bcf
-*.bcf.csi
-
-# alignment / kmer caches
+# alignment indexes
 *.fai
-*.fa.fai
-*.dict
 *.mmi
-*.bt2
-*.bt2l
+.bt2
 *.bwt
 *.sa
 *.amb
 *.ann
 *.pac
-*.smi
-*.sma
-*.sdf
 
-# logs, temp, reports (you can manually add key PDFs/PNGs you want to publish)
+# logs & temp
 *.log
 *.tmp
 *.temp
-*.touch
 *.html
 *.json
 *.pdf
 
-# IDE / OS / notebooks
-.DS_Store
-Thumbs.db
-*.swp
-.ipynb_checkpoints/
-
-# Python
+# Python/Conda
 _pycache_/
 *.egg-info/
 .venv/
 .env/
-
-# Conda
 .conda/
-*.conda-env
-envs/
 
-# Project-specific large folders (still tracked locally)
+# IDE / OS
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+
+# Project-specific large folders
 Phase1_DataFoundation/raw/
 Phase1_DataFoundation/downloads/
 Phase1_DataFoundation/hla_runs/
