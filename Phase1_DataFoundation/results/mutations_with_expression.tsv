@@ -1,0 +1,3 @@
+patient_id	sample_id	chrom	pos	ref	alt	gene_symbol	transcript	aa_change	variant_class	VAF	depth	impact	expression_TPM	expr_confirmed
+P001	Pt1.baseline	7	140453136	A	T	BRAF	ENST00000288602	p.V600E	missense	0.35	120	MODERATE	0.907762253749296	False
+P001	Pt1.baseline	1	115256530	G	A	NRAS	ENST00000369535	p.Q61K	missense	0.22	98	MODERATE	10.92394262277611	True
