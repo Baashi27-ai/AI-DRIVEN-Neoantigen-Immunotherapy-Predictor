@@ -17,23 +17,25 @@ Scripts (scripts/):
 ## HLA Typing
 
 ### Cleaning Reads & Typing
-```bash
+bash
 fastp \
   -i sample1_R1.fastq.gz -I sample1_R2.fastq.gz \
   -o clean_R1.fq.gz -O clean_R2.fq.gz \
   --detect_adapter_for_pe --qualified_quality_phred 15 --length_required 50 \
   --thread 4 --html fastp_report.html --json fastp_report.json
 
-# OptiType (standard)
+
+### OptiType (standard)
+bash
 OptiTypePipeline.py \
   -i clean_R1.fq.gz clean_R2.fq.gz \
   -o results/optitype_sample1_full -p sample1 --dna -v
 
-# OptiType (relaxed config)
+
+### OptiType (relaxed config)
+bash
 OptiTypePipeline.py \
   -i clean_R1.fq.gz clean_R2.fq.gz \
   -o results/optitype_sample1_relaxed -p sample1 --dna \
   -c results/optitype_relaxed.ini -v
-git add docs/PHASE1_NOTES.md
-git commit -m "Docs: Phase 1 methods + SOP notes"
-git push
+
