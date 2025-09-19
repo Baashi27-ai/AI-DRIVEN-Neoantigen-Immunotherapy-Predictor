@@ -1,1 +1,32 @@
-<paste above>
+# Byte-compiled / cache
+_pycache_/
+*.py[cod]
+*.Rhistory
+
+# Logs & reports
+*.log
+*.html
+*.json
+
+# FASTQ / BAM / VCF raw data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.sam
+*.vcf
+*.vcf.gz
+
+# Large intermediate results
+Phase1_DataFoundation/hla_runs/
+Phase1_DataFoundation/results/optitype_sample1_full/
+Phase1_DataFoundation/results/optitype_sample1_relaxed/
+Phase1_DataFoundation/results/optitype_sample1_SE/
+Phase1_DataFoundation/downloads/
+Phase1_DataFoundation/raw/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
