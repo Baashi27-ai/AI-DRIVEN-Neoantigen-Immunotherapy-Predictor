@@ -1,0 +1,28 @@
+name: neo-phase1
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  # Core
+  - python=3.9
+  - pandas
+  - numpy
+  - matplotlib
+  - biopython
+  - pyomo
+  - pip
+
+  # Sequencing I/O & tools
+  - pysam
+  - samtools
+  - fastp
+
+  # HLA typing stack
+  - optitype            # brings razers3
+  - glpk>=5.0           # modern GLPK to avoid Pyomo warnings
+
+  # R (for your R plotting script)
+  - r-base=4.2
+  - r-ggplot2
+  - r-data.table
