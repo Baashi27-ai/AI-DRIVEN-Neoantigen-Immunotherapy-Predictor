@@ -1,35 +1,60 @@
 # AI-DRIVEN Neoantigen & Immunotherapy Predictor
 
-*Author:* Bhaskararao Ch (Baashi27-ai) • *Contact:* bhaskarch.1602@gmail.com
+## Overview
+This repository contains a multi-phase pipeline for predicting patient-specific neoantigens and guiding immunotherapy response modeling.  
+It integrates *HLA typing, mutation-expression linkage, RNA-seq processing, and immune infiltration analysis* into a reproducible framework.
 
-## Abstract
-This project develops an AI-driven pipeline to predict patient-specific neoantigens and immunotherapy response.  
-The workflow integrates somatic mutations, RNA expression, HLA typing, and immune infiltration, producing reproducible results and publication-ready artifacts.
+---
 
-## Phases
-- *Phase 1 – Data Foundation (DONE)*  
-  - Mutation parsing, RNA-seq TPM conversion  
-  - HLA typing (OptiType full + relaxed)  
-  - Metadata curation & manifest logging
-- *Phase 2 – Neoantigen Prediction (NEXT)*  
-  - NetMHCpan / MHCflurry binding, filtering, QC plots
-- *Phase 3 – AI Modeling*  
-- *Phase 4 – Explainability & Clinical Mapping*  
-- *Phase 5 – Dashboard & Validation*  
-- *Phase 6 – Packaging & Publication*
+## Repository Structure
+AI-DRIVEN-Neoantigen-Immunotherapy-Predictor/ ├── Phase1_DataFoundation/       # Core data + scripts for Phase 1 │   ├── metadata/                # Patient and clinical annotations │   ├── results/                 # Processed outputs (HLA typing, mutations, TPMs) │   ├── scripts/                 # Python and R utilities for Phase 1 │   └── phase1_manifest.tsv      # Log of all Phase 1 outputs ├── docs/                        # Documentation and methods │   └── PHASE1_NOTES.md          # SOP notes for Phase 1 ├── .gitignore                   # Ignore raw/large files └── README.md                    # Project overview (this file)
+---
 
-## Directory Layout
-Neo_Antigen_Moonshot/ ├─ Phase1_DataFoundation/ │  ├─ metadata/                     # patient labels, metadata │  ├─ scripts/                      # python/R scripts for Phase 1 │  ├─ results/                      # compact TSV results (tracked) │  └─ phase1_manifest.tsv           # provenance log ├─ figures/                         # curated plots ├─ README.md └─ .gitignore
-## Phase 1 Key Artifacts
-- results/hla_types.tsv – HLA genotypes  
-- metadata/patient_metadata.tsv – patient linkage  
-- metadata/gse78220_labels.tsv – response labels  
-- results/somatic_mutations.tsv – compact mutation table  
-- phase1_manifest.tsv – log of commands & outputs
+## Phase 1: Data Foundation
+- *Metadata curation*
+  - metadata/patient_metadata.tsv
+  - metadata/gse78220_labels.tsv
+- *Expression processing*
+  - Convert RNA-seq FPKM → TPM
+  - Ensure mutation-expression linkage
+- *HLA typing*
+  - OptiType standard & relaxed runs on paired-end RNA-seq
+- *Outputs*
+  - results/hla_types.tsv – HLA types per patient
+  - results/mutations_with_expression.tsv – expressed mutations
+  - results/immune_infiltration_scores.tsv – infiltration estimates
+  - phase1_manifest.tsv – reproducibility log
 
-## Citation
-Bhaskararao Ch (2025). AI-DRIVEN Neoantigen & Immunotherapy Predictor.  
-https://github.com/Baashi27-ai/AI-DRIVEN-Neoantigen-Immunotherapy-Predictor
+📄 Detailed SOP: [docs/PHASE1_NOTES.md](docs/PHASE1_NOTES.md)
+
+---
+
+## Future Phases
+- *Phase 2:* Neoantigen candidate prediction  
+- *Phase 3:* Immunogenicity scoring + integration with immune infiltration  
+- *Phase 4:* AI-driven predictive modeling  
+
+---
+
+## Requirements
+### Python
+- Python ≥3.9  
+- Packages: pandas, numpy, pyomo, biopython, matplotlib  
+- Specialized tools: [OptiType](https://github.com/FRED-2/OptiType), fastp  
+
+### R
+- R ≥4.0  
+- Packages: ggplot2, data.table  
+
+(See requirements.txt to reproduce the environment.)
+
+---
 
 ## License
-MIT (see LICENSE)
+This project is released under the [MIT License](LICENSE).
+
+---
+
+## Citation
+If you use this pipeline in academic work, please cite:  
+*Bhaskararao Ch (Baashi27-ai), *AI-DRIVEN Neoantigen & Immunotherapy Predictor, 2025.
