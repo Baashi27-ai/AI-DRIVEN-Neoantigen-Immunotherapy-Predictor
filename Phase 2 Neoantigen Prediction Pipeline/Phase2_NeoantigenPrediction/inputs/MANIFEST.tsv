@@ -1,0 +1,5 @@
+categoryfilenamefull_pathcomment 
+variant_infosomatic_mutations.tsvC:\Neo_Antigen_Moonshot\Phase 2 Neoantigen Prediction Pipeline\inputs\variant_info\somatic_mutations.tsvSomatic variants with VAF 
+variant_infomutations_with_expression.tsvC:\Neo_Antigen_Moonshot\Phase 2 Neoantigen Prediction Pipeline\inputs\variant_info\mutations_with_expression.tsvPre-joined helper (optional) 
+expressionexpression_tpm.tsvC:\Neo_Antigen_Moonshot\Phase 2 Neoantigen Prediction Pipeline\inputs\expression\expression_tpm.tsvGene-level TPM 
+hlahla_types.tsvC:\Neo_Antigen_Moonshot\Phase 2 Neoantigen Prediction Pipeline\inputs\hla\hla_types.tsvHLA class I alleles 
