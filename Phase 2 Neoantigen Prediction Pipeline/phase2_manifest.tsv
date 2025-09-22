@@ -1,0 +1,10 @@
+path	size_bytes	sha1	modified_iso	note
+inputs/peptides/derived_peptides.txt	436	14f6bb28cf92bb93c3624af5b6d1f2e813fa3798	2025-09-22T12:50:10+00:00	derived peptides
+results/binding_affinity_histogram.png	51082	a40def1c7c21ffd26cef6423c69d93485fd737a1	2025-09-22T12:18:06+00:00	QC plot
+results/peptide_filtering_flowchart.png	25670	3bf42359efa92fc0ba895cdb8afc292429db6fff	2025-09-22T12:18:07+00:00	QC diagram
+results/peptide_length_distribution.png	36094	b5fd5e2008a37c0aa0aa2d2dba66e2823e36c546	2025-09-22T12:18:07+00:00	QC plot
+scripts/.gitkeep	0	da39a3ee5e6b4b0d3255bfef95601890afd80709	2025-09-19T12:30:02+00:00	phase2 script
+results/binding_affinity_histogram.png
+results/peptide_length_distribution.png
+results/peptide_filtering_flowchart.png
+results/neoantigen_candidates.tsv
