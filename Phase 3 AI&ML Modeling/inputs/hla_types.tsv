@@ -1,0 +1,4 @@
+sample_id	HLA-A_1	HLA-A_2	HLA-B_1	HLA-B_2	HLA-C_1	HLA-C_2	typing_method	source	notes	current_for_phase2
+Pt1.baseline								to-be-computed	Initialized in Phase 1; fill via OptiType/Polysolver	
+Pt1.baseline	A*23:01	A*23:01			C*05:01	C*05:01	OptiType	optitype_sample1_full	paired-end after fastp cleaning	
+Pt1.baseline	A*02:01	A*23:01	B*14:02	B*14:02	C*05:01	C*05:01	OptiType_relaxed	optitype_sample1_relaxed	paired-end after fastp cleaning, relaxed mapping	yes

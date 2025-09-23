@@ -30,3 +30,7 @@ Phase1_DataFoundation/raw/
 # OS / Editor files
 .DS_Store
 Thumbs.db
+
+# Phase 3 ignores
+Phase 3 AI&ML Modeling/work/
+Phase 3 AI&ML Modeling/qc/
