@@ -1,7 +1,7 @@
 # AI-DRIVEN Neoantigen & Immunotherapy Predictor
 
 🚀 *Precision Immuno-Oncology with Multi-Phase Pipeline*  
-This repository hosts a complete AI-driven pipeline for *neoantigen discovery and immunotherapy prediction, structured in  
+This repository hosts a complete AI-driven pipeline for *neoantigen discovery and immunotherapy prediction, structured in 3 phases.
 
 ## 🌟 Highlights
 - End-to-end *data foundation → neoantigen prediction → AI/ML modeling*
